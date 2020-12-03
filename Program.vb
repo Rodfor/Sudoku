@@ -11,10 +11,10 @@ Module Program
 
         Console.WriteLine("Start")
 
-        While x < 9
+        While x <= 9
             y = 1
-            While y < 9
-                Dim C As New Cell
+            While y <= 9
+                Dim C As New Cell(x, y)
 
                 Cellen.Add(C)
                 y += 1
@@ -92,8 +92,9 @@ Module Program
         Console.WriteLine("Start solving")
 
         If Solve() Then
+            Console.WriteLine("YEEEEEEEEEY")
             For Each C As Cell In Cellen
-                Console.WriteLine($"x = {C.X}, Y = {C.Y}, Val = {C.Waarde}")
+                Console.WriteLine($"x = {C.X}, Y = {C.Y}, Z = {C.Z}, Val = {C.Waarde}")
             Next
         Else
             Console.WriteLine("Geen uitkomst gevonden")
@@ -101,47 +102,6 @@ Module Program
                 Console.WriteLine($"x = {C.X}, Y = {C.Y}, Val = {C.Waarde}")
             Next
         End If
-        'Select Case C.X
-        '    Case 1
-        '        X1.Add(C)
-        '    Case 2
-        '        X2.Add(C)
-        '    Case 3
-        '        x3.Add(C)
-        '    Case 4
-        '        X4.Add(C)
-        '    Case 5
-        '        X5.Add(C)
-        '    Case 6
-        '        x6.Add(C)
-        '    Case 7
-        '        X7.Add(C)
-        '    Case 8
-        '        X8.Add(C)
-        '    Case 9
-        '        X9.Add(C)
-        'End Select
-
-        'Select Case C.Y
-        '    Case 1
-        '        Y1.Add(C)
-        '    Case 2
-        '        Y2.Add(C)
-        '    Case 3
-        '        Y3.Add(C)
-        '    Case 4
-        '        Y4.Add(C)
-        '    Case 5
-        '        Y5.Add(C)
-        '    Case 6
-        '        Y6.Add(C)
-        '    Case 7
-        '        Y7.Add(C)
-        '    Case 8
-        '        Y8.Add(C)
-        '    Case 9
-        '        Y9.Add(C)
-        'End Select
 
     End Sub
 
@@ -158,17 +118,19 @@ Module Program
         For num = 1 To 9
             If CheckConstraint(C, num) Then
                 C.Waarde = num
-            End If
 
-            Console.Write("a")
+                Console.WriteLine($"x = {C.X}, Y = {C.Y}, Val = {C.Waarde}")
 
-            If Solve() Then
-                Return True
+                If Solve() Then
+                    Return True
+                End If
+
             End If
 
             Console.Write("b")
 
             C.Waarde = 0
+
         Next
 
         Return False
@@ -227,6 +189,10 @@ Public Class Cell
 
     Public Property Waarde As Short = 0
 
+    Public Sub New(x, y)
+        Me.X = x
+        Me.Y = y
+    End Sub
 
 End Class
 
