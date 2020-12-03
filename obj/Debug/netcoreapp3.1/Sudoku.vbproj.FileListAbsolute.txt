@@ -1,0 +1,13 @@
+C:\Users\matth\source\repos\Sudoku\bin\Debug\netcoreapp3.1\Sudoku.exe
+C:\Users\matth\source\repos\Sudoku\bin\Debug\netcoreapp3.1\Sudoku.deps.json
+C:\Users\matth\source\repos\Sudoku\bin\Debug\netcoreapp3.1\Sudoku.runtimeconfig.json
+C:\Users\matth\source\repos\Sudoku\bin\Debug\netcoreapp3.1\Sudoku.runtimeconfig.dev.json
+C:\Users\matth\source\repos\Sudoku\bin\Debug\netcoreapp3.1\Sudoku.dll
+C:\Users\matth\source\repos\Sudoku\bin\Debug\netcoreapp3.1\Sudoku.pdb
+C:\Users\matth\source\repos\Sudoku\obj\Debug\netcoreapp3.1\Sudoku.vbprojAssemblyReference.cache
+C:\Users\matth\source\repos\Sudoku\obj\Debug\netcoreapp3.1\Sudoku.AssemblyInfoInputs.cache
+C:\Users\matth\source\repos\Sudoku\obj\Debug\netcoreapp3.1\Sudoku.AssemblyInfo.vb
+C:\Users\matth\source\repos\Sudoku\obj\Debug\netcoreapp3.1\Sudoku.vbproj.CoreCompileInputs.cache
+C:\Users\matth\source\repos\Sudoku\obj\Debug\netcoreapp3.1\Sudoku.dll
+C:\Users\matth\source\repos\Sudoku\obj\Debug\netcoreapp3.1\Sudoku.pdb
+C:\Users\matth\source\repos\Sudoku\obj\Debug\netcoreapp3.1\Sudoku.genruntimeconfig.cache
